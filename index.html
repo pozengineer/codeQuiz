@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us" class="h-100">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>codeQuiz</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style01.css">
+        
+    </head>
+
+    <body class="d-flex flex-column h-100">
+        <header>
+            <div class="header">
+                <!-- row01 -->
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1>Code Quiz</h1>
+                    </div>
+                    <div class="col-md-3 time">
+                        <div class="hide" id="minutes"></div>
+                        <div class="hide" id="seconds"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="mainContent">
+            <div class="container">
+                <!-- row01 -->
+                <div class="row" id="questionContainer">
+                    <div class="col-md-12 hide" id="question">Question</div>
+                </div>
+                <!-- row02 -->
+                <div class="row" id="answerBtn">
+                    <div class="col-md-3">
+                        <button class="btn hide">Answer1</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn hide">Answer2</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn hide">Answer3</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn hide">Answer4</button>
+                    </div> 
+                </div>
+                <!-- row02 -->
+                <div class="row" id="controls">
+                    <div class="col-md-6">
+                        <button class="start-btn btn" id="startBtn">Start Quiz</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="next-btn btn hide" id="nextBtn">Next</button>
+                    </div>    
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer mt-auto py-3">
+            <span class="text-muted">Copyright &#169; 2019</span>
+        </footer>
+        <script type="text/javascript" src="assets/javaScript/javaScript02.js"></script>
+
+    </body>
+
+</html>
