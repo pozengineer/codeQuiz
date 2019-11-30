@@ -103,7 +103,7 @@ function nextQues(event) {
     event.stopPropagation(event);
     console.log(secondsElapsed);
     secondsLeft = totalSeconds - secondsElapsed;
-    console.log(secondsLeft);
+    console.log("secondsLeft = " + secondsLeft);
     var choiceSelect = event.target.matches("button");
     if (choiceSelect) {
         answerSelect(event);
@@ -119,7 +119,7 @@ function nextQues(event) {
             console.log(lastChoices);
             displayQues(currentQuesIndex);
         }
-        else if(secondsLeft === 0){
+        else if(secondsLeft == 0){
             alert("Times Run out!");
             submitBtnEl.setAttribute("class", "show btn");
             inputTitleEl.setAttribute("class", "show col-md-3");
@@ -294,7 +294,7 @@ function getFormattedSeconds() {
 }
 
 function setTime() {
-    var minutes = minutesDisplayEl.value = 0.5;
+    var minutes = minutesDisplayEl.value = 2;
 
     clearInterval(interval);
     totalSeconds = minutes * 60;
