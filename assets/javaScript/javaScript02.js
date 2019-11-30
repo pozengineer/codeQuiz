@@ -117,7 +117,7 @@ function nextQues(event) {
             console.log(lastChoices);
             displayQues(currentQuesIndex);
         }
-        else if(secondsLeft === 0){
+        else if(secondsElapsed > 120){
             alert("Times Run out!");
             submitBtnEl.setAttribute("class", "show btn");
             inputTitleEl.setAttribute("class", "show col-md-3");
