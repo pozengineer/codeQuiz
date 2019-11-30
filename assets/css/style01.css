@@ -114,6 +114,16 @@ h1 {
     font-size: 28px;
 }
 
+h3 {
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    color: #efeee7;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+
 .textArea {
     width: 100%;
     border: solid;

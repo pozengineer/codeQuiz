@@ -14,7 +14,7 @@ var interval;
 var shuffledQues = "";
 var currentQuesIndex = "";
 
-startBtn.addEventListener('click', startQuiz);
+startBtnEl.addEventListener('click', startQuiz);
 nextBtnEl.addEventListener('click', () => {
     currentQuesIndex++;
     setNextQues();
