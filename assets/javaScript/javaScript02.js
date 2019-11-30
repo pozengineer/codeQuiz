@@ -101,7 +101,9 @@ function nextQues(event) {
     // any parent handlers from being notified of the event. You can use the method event.isPropagationStopped()
     // to know whether this method was ever called (on that event object).
     event.stopPropagation(event);
-
+    console.log(secondsElapsed);
+    secondsLeft = totalSeconds - secondsElapsed;
+    console.log(secondsLeft);
     var choiceSelect = event.target.matches("button");
     if (choiceSelect) {
         answerSelect(event);
@@ -117,7 +119,7 @@ function nextQues(event) {
             console.log(lastChoices);
             displayQues(currentQuesIndex);
         }
-        else if(secondsElapsed > 120){
+        else if(secondsLeft === 0){
             alert("Times Run out!");
             submitBtnEl.setAttribute("class", "show btn");
             inputTitleEl.setAttribute("class", "show col-md-3");
@@ -135,9 +137,6 @@ function nextQues(event) {
             }
             currentQuesIndex++;
             console.log(score);
-            console.log(secondsElapsed);
-            secondsLeft = totalSeconds - secondsElapsed;
-            console.log(secondsLeft);
             console.log('Quiz Finished');
             pauseTimer();
             submitBtnEl.setAttribute("class", "show btn");
@@ -295,7 +294,7 @@ function getFormattedSeconds() {
 }
 
 function setTime() {
-    var minutes = minutesDisplayEl.value = 2;
+    var minutes = minutesDisplayEl.value = 0.5;
 
     clearInterval(interval);
     totalSeconds = minutes * 60;

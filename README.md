@@ -2,6 +2,18 @@
 
 Summary
 
+The web application is a code quiz that allows the user to answer a set of multiple choice questions
+with a countdown. If the user choose the correct answer, they get a score value. However, if they
+chhose the wrong answer, a time penalty is added to the countdown. When the user finishes the quiz,
+they are directed to a page where they insert their initials linked with the score that they have
+achieved. Then the user clicks on a button that submits their data into localStorage where they can
+call on that data at any point in the javaScript code.
+
+Additional functions include copy to clipboard and reset where the user is able to select
+the generated password and paste it into another document. The reset method enables the user
+to set the application to it's default values in order to generate a new password but it is
+not necessary as the user can simply click on the generate password button again.
+
 The application uses 'addEventListener' so that when one of the buttons is clicked on, it will
 initiate the associated function. The use of 'preventDefault' and 'stopPropagation' methods are
 used to prevent the window from going to it's default settings when the function is run and
