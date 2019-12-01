@@ -60,7 +60,7 @@ function startQuiz(event) {
     highScoreContainerEl.setAttribute("class", "hide");
     minutesDisplayEl.setAttribute("class", "show");
     secondsDisplayEl.setAttribute("class", "show");
-
+    console.log(moment());
     startTimer();
     displayQues(currentQuesIndex);
 
@@ -260,6 +260,7 @@ function clearList(event){
     event.stopPropagation(event);
     $(".listScores").empty();
     // localStorage.clear();
+    clearBtnEl.setAttribute("class", "hide");
 }
 
 

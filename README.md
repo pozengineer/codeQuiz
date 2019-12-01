@@ -3,26 +3,27 @@
 Summary
 
 The web application is a code quiz that allows the user to answer a set of multiple choice questions
-with a countdown. If the user choose the correct answer, they get a score value. However, if they
-chhose the wrong answer, a time penalty is added to the countdown. When the user finishes the quiz,
-they are directed to a page where they insert their initials linked with the score that they have
-achieved. Then the user clicks on a button that submits their data into localStorage where they can
-call on that data at any point in the javaScript code.
+with a countdown. If the user selects the correct answer, they get a score value increment. However,
+if they select the wrong answer, a time penalty is added to the countdown. When the user finishes the
+quiz, they are directed to a window where they insert their initials. The user clicks on a button that
+submits their initials alond with the final score that they have achieved into localStorage where they
+can view the data at any point in the application through the highscores tab which will list the
+highscores array.
 
-Additional functions include copy to clipboard and reset where the user is able to select
-the generated password and paste it into another document. The reset method enables the user
-to set the application to it's default values in order to generate a new password but it is
-not necessary as the user can simply click on the generate password button again.
+The application uses 'addEventListener' so that when one of the buttons is clicked on, it will initiate
+the associated function. The use of 'preventDefault' and 'stopPropagation' methods are used to prevent
+the window from going to it's default settings when the function is run and prevents the clicked event
+from affecting the parent elements in the application. Even though the application illustrates no noticable
+bugs, there are a few things that were not rectified due to time restrictions. For example, when the countdown
+reaches 0, the user should be alerted that time has run out and sent straight to the userInput window. With
+additional time to work on the code, this issue could be fixed. 
 
-The application uses 'addEventListener' so that when one of the buttons is clicked on, it will
-initiate the associated function. The use of 'preventDefault' and 'stopPropagation' methods are
-used to prevent the window from going to it's default settings when the function is run and
-prevents the clicked event from affecting the parent elements in the application.
-
-The purpose of this application is to demonstrate the use of functions and 'addEventListener' so
-that events are able to be delegated to different elements in an html file. In addition, implementing
-responsive behaviour of html files using media queries. This enables the developer to create applications
-that can be viewed on multiple devices and screen sizes such as:
+The purpose of this application is to demonstrate the use of functions and 'addEventListener' so that events
+are able to be delegated to different elements in an html file. This application demonstrates how javaScript
+can be utilised to create and append elements to the HTML document. This allows manipulation of element
+attributes during certain times when the application is being used. In addition, implementing responsive
+behaviour of html files using media queries. This enables the developer to create applications that can be
+viewed on multiple devices and screen sizes such as:
 - iphone
 - Tablet
 - Laptop
@@ -38,6 +39,10 @@ in an html file:
 - preventDefault method
 - stopPropagation method
 - Local Storage
+- Create Elements
+- Set Attributes
+- AppendChild
+- Countdown timer
 
 Getting Started
 
@@ -59,9 +64,11 @@ There are additional files that should be disregarded. They were used as the ini
 blocks for the application but want to keep them for future reference.
 
 This application was built using:
-- HTML: HyperText Markup Language that allows the developer to structure webpages
-- CSS: Style Sheet Language that allows the developer to style an HTML document
-- JavaScript: Programming Language that allows the developer to apply functions and methods to an HTML document 
-- BootStrap: Library of HTML and CSS files and code https://getbootstrap.com/
+-   HTML: HyperText Markup Language that allows the developer to structure webpages
+-   CSS: Style Sheet Language that allows the developer to style an HTML document
+-   JavaScript: Programming Language that allows the developer to apply functions and methods to an HTML document 
+-   BootStrap: Library of HTML and CSS files and code https://getbootstrap.com/
+-   jQuery: JavaScript library that enables HTML document traversal and manipulation, event handling, animation,
+    and Ajax much simpler with an easy-to-use API
 
 ![passwordGenerator tablet](assets/images/codeQuiz01.jpg)
