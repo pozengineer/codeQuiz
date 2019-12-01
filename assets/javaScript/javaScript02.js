@@ -35,9 +35,19 @@ var questions = [
         answer: 2
     },
     {
-        title: "What is 2 + 2",
-        choices: ["-9", "25", "8", "4"],
+        title: "The unordered collection of properties, each of which has a name and a value is called",
+        choices: ["String", "Object", "Serialized Object", "All of the mentioned"],
+        answer: 1
+    },
+    {
+        title: "JavaScript Code can be called by using",
+        choices: ["RMI", "Triggering Event", "Preprocessor", "Function/ Method"],
         answer: 3
+    },
+    {
+        title: "Which of the following is not considered as an error in JavaScript?",
+        choices: ["Syntax error", "Missing of semicolons", "Division by zero", "All of the mentioned"],
+        answer: 2
     }
 ]
 
